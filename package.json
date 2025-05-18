@@ -2,7 +2,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts" 
   },
   "devDependencies": {
     "@types/cors": "^2.8.18",
