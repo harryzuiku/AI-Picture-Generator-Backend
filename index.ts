@@ -135,7 +135,7 @@ app.post('/generate', upload.single('image'), async (req: Request, res: Response
               .toFile(finalOutputPath);
         
             // 返回本地 resized 图片的 URL（可改为上传到 CDN 或 Cloudinary）
-            res.json({ url: `http://localhost:5001/outputs/${path.basename(finalOutputPath)}` });
+            res.json({ url: `https://ai-picture-generator-backend-production.up.railway.app/outputs/${path.basename(finalOutputPath)}` });
         } else {
             res.status(500).json({ error: 'Image generation failed or timed out.' });
         }
